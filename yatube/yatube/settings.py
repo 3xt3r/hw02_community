@@ -1,5 +1,4 @@
 import os
-from os.path import join, dirname
 from dotenv import load_dotenv
 from pathlib import Path
 NUMBER_OF_POSTS = 10
