@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import Post, Group
 
-@admin.register(Post)
 
+@admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     DISPLAY_SCREEN = '-пусто-'
     list_editable = ('group',)
@@ -10,4 +10,3 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ('text',)
     list_filter = ('pub_date',)
     empty_value_display = DISPLAY_SCREEN
-

@@ -3,10 +3,11 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 from pathlib import Path
 NUMBER_OF_POSTS = 10
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 load_dotenv()
-env_path = Path('.')/'.env'
+env_path = Path('.') / '.env'
 load_dotenv(env_path)
 
 SECRET_KEY = os.getenv("SECRET_KEY")
